@@ -1,10 +1,6 @@
 # Exercise Tracker
 
-A full-stack MERN application for tracking personal fitness exercises with complete CRUD functionality.
-
-## Overview
-
-This project demonstrates modern web development practices using the MERN stack (MongoDB, Express.js, React, Node.js) to create a responsive single-page application for exercise tracking.
+A full-stack MERN application for tracking personal fitness exercises with complete CRUD functionality. Demonstrates modern web development practices using the MERN stack (MongoDB, Express.js, React, Node.js) to create a responsive single-page application for exercise tracking.
 
 **Key Features:**
 - Complete CRUD operations for exercise management
@@ -12,6 +8,10 @@ This project demonstrates modern web development practices using the MERN stack 
 - Responsive React frontend with client-side routing
 - MongoDB database integration
 - Form validation and error handling
+
+## Live Demo
+Try out the app: [MERN Exercise Tracker](https://mern-exercise-api-6b13.onrender.com)
+> This app is deployed on [Render](https://render.com). Note that it may take a few seconds to wake up if inactive.
 
 ## Tech Stack
 
