@@ -27,7 +27,7 @@ function HomePage({ setExerciseToEdit }) {
   const deleteExercise = async (exerciseId) => {
     try {
       // Call DELETE /exercises/:id endpoint
-      const response = await fetch(`/exercises/${exerciseId}`, {
+      const response = await fetch(`${API_BASE}/exercises/${exerciseId}`, {
         method: "DELETE",
       });
 
