@@ -6,3 +6,6 @@
 
 # Mac system files (optional)
 .DS_Store
+
+# Ignore build directories
+/dist/
