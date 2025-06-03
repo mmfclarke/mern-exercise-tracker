@@ -6,7 +6,7 @@ import express from 'express';
 import asyncHandler from 'express-async-handler';
 import * as exercises from './exercises_model.mjs';
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(express.json());
