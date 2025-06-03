@@ -10,8 +10,8 @@ A full-stack MERN application for tracking personal fitness exercises with compl
 - Form validation and error handling
 
 ## Live Demo
-Try out the app: [MERN Exercise Tracker](https://mern-exercise-api-6b13.onrender.com)
-> This app is deployed on [Render](https://render.com). Note that it may take a few seconds to wake up if inactive.
+Try out the app: [MERN Exercise Tracker](https://mmfclarke-mern-exercise-tracker.netlify.app/)
+> The frontend is deployed on [Netlify](https://app.netlify.com/), and it communicates with the backend Rest API hosted on [Render](https://render.com). Note the backend may take a few seconds to wake up if inactive.
 
 ## Tech Stack
 
