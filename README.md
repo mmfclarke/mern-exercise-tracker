@@ -13,10 +13,6 @@ This project demonstrates modern web development practices using the MERN stack 
 - MongoDB database integration
 - Form validation and error handling
 
-## Screenshots
-<img src="images/HomePage.png" alt="Screenshot" width="700">
-<img src="images/CreateExercise.png" alt="Screenshot" width="700">
-
 ## Tech Stack
 
 **Frontend:**
@@ -30,6 +26,10 @@ This project demonstrates modern web development practices using the MERN stack 
 - MongoDB with Mongoose ODM
 - RESTful API architecture
 - ES6+ modules with async/await
+  
+## Screenshots
+<img src="images/HomePage.png" alt="Screenshot" width="600">
+<img src="images/CreateExercise.png" alt="Screenshot" width="600">
 
 ## Skills Demonstrated
 
