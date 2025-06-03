@@ -14,8 +14,8 @@ This project demonstrates modern web development practices using the MERN stack 
 - Form validation and error handling
 
 ## Screenshots
-<img src="images/HomePage.png" alt="Screenshot" width="500">
-<img src="images/CreateExercise.png" alt="Screenshot" width="500">
+<img src="images/HomePage.png" alt="Screenshot" width="700">
+<img src="images/CreateExercise.png" alt="Screenshot" width="700">
 
 ## Tech Stack
 
