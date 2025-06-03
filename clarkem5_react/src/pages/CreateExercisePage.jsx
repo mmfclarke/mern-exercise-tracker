@@ -11,6 +11,9 @@ function CreateExercisePage() {
   const [unit, setUnit] = useState("lbs");
   const [date, setDate] = useState("");
 
+  // API base URL from environment variable
+  const API_BASE = import.meta.env.VITE_API_BASE_URL;
+
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,7 +27,7 @@ function CreateExercisePage() {
     };
 
     try {
-      const response = await fetch("/exercises", {
+      const response = await fetch(`${API_BASE}/exercises`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newExercise),

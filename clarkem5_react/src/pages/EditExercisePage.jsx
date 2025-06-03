@@ -11,6 +11,9 @@ function EditExercisePage({ exerciseToEdit }) {
   const [unit, setUnit] = useState("lbs");
   const [date, setDate] = useState("");
 
+  // API base URL from environment variable
+  const API_BASE = import.meta.env.VITE_API_BASE_URL;
+
   // When exerciseToEdit changes, pre-populate form
   useEffect(() => {
     if (exerciseToEdit) {
@@ -41,7 +44,7 @@ function EditExercisePage({ exerciseToEdit }) {
     };
 
     try {
-      const response = await fetch(`/exercises/${exerciseToEdit._id}`, {
+      const response = await fetch(`${API_BASE}/exercises/${exerciseToEdit._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

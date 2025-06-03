@@ -4,11 +4,14 @@ import ExerciseTable from "../components/ExerciseTable";
 function HomePage({ setExerciseToEdit }) {
   const [exercises, setExercises] = useState([]);
 
+  // API base URL from environment variable
+  const API_BASE = import.meta.env.VITE_API_BASE_URL;
+
   // Load exercises from the REST API
   const loadExercises = async () => {
     try {
       // Call GET /exercises endpoint
-      const response = await fetch("/exercises");
+      const response = await fetch(`${API_BASE}/exercises`);
       if (response.ok) {
         const exercisesData = await response.json();
         setExercises(exercisesData);
