@@ -3,11 +3,27 @@
  */
 import 'dotenv/config';
 import express from 'express';
+import cors from 'cors';
 import asyncHandler from 'express-async-handler';
 import * as exercises from './exercises_model.mjs';
 
 const PORT = process.env.PORT || 3000;
 const app = express();
+
+const allowedOrigins = [
+    'https://mmfclarke-mern-exercise-tracker.netlify.app', 
+    'http://localhost:5173'
+];
+
+app.use(cors({
+    origin: (origin, callback) => {
+        if (!origin) return callback(null, true);
+        if (allowedOrigins.indexOf(origin) === -1) {
+            return callback(new Error('Not allowed by CORS'), false);
+        }
+        return callback(null, true);
+    }
+}));
 
 app.use(express.json());
 
